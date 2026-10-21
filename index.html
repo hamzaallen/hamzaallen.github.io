@@ -28,6 +28,26 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
   <script defer src="assets/main.js"></script>
+<style>
+/* Profile image: integrates into the existing homepage hero without altering the site grid. */
+.hero-identity { display:flex; align-items:center; gap:1.2rem; margin-bottom:1.8rem; }
+.profile-photo { position:relative; width:112px; height:112px; flex:0 0 112px;
+  overflow:hidden; border-radius:50%; border:3px solid #dceae6;
+  background:#e8f2ef; box-shadow:0 10px 30px rgba(23,51,54,.10); }
+.profile-photo-fallback { position:absolute; inset:0; display:grid; place-items:center;
+  font-size:2rem; font-weight:700; letter-spacing:.04em; color:#2b6862; }
+.profile-photo img { position:relative; z-index:1; width:100%; height:100%; display:block;
+  object-fit:cover; object-position:center 28%; }
+.hero-identity-name { margin:0; font-size:1.18rem; font-weight:750; line-height:1.4; }
+.hero-identity-role { margin:.2rem 0 0; font-size:.9rem; opacity:.8; line-height:1.5; }
+@media (max-width:640px) {
+  .hero-identity { gap:.85rem; margin-bottom:1.4rem; }
+  .profile-photo { width:84px; height:84px; flex-basis:84px; }
+  .profile-photo-fallback { font-size:1.5rem; }
+  .hero-identity-name { font-size:1.04rem; }
+  .hero-identity-role { font-size:.82rem; }
+}
+</style>
 </head>
 <body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="shell nav-wrap">
@@ -37,6 +57,19 @@
 <a href="index.html#work">Projects</a><a href="index.html#experience">Experience</a><a href="research.html">Research</a><a href="index.html#skills">Skills</a><a class="nav-contact" href="mailto:elbyadhamza@gmail.com">Get in touch ↗</a><a href="assets/Hamza_El_Byad_CV.pdf">CV ↓</a>
 </nav></div></header><main id="main">
 <section class="hero"><div class="shell hero-grid"><div>
+<div class="hero-identity">
+  <div class="profile-photo" aria-label="Profile photo of Hamza El Byad">
+    <span class="profile-photo-fallback" aria-hidden="true">HE</span>
+    <img src="assets/images/hamza-el-byad.webp"
+         alt="Hamza El Byad, Machine Learning Engineer and AI Researcher"
+         width="112" height="112"
+         onerror="this.style.display='none'">
+  </div>
+  <div class="hero-identity-text">
+    <p class="hero-identity-name">Hamza El Byad</p>
+    <p class="hero-identity-role">Machine Learning Engineer &amp; AI Researcher</p>
+  </div>
+</div>
 <span class="eyebrow">MACHINE LEARNING ENGINEER  /  APPLIED AI  /  SCIENTIFIC ML</span>
 <h1>I build machine learning systems that <span>work beyond the notebook.</span></h1>
 <p class="hero-lead">Machine Learning Engineer with a PhD in Mathematics &amp; Computer Science, working across RAG applications, industrial predictive modeling, and scientific data analysis.</p>
