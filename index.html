@@ -1,127 +1,202 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f9fafb">
-
-  <title>Hamza El Byad | Machine Learning Engineer & AI Researcher</title>
-
-  <meta name="description"
-        content="Hamza El Byad is a Machine Learning Engineer and AI Researcher with a PhD in Mathematics and Computer Science. Explore projects in Applied AI, RAG, MLOps, industrial machine learning, and scientific computing.">
-
+  <title>Hamza El Byad | Research & Machine Learning</title>
+  <meta name="description" content="Hamza El Byad is a researcher and machine learning engineer with a PhD in Mathematics and Computer Science. Research in astrophysical time series, scientific computing and applied machine learning.">
   <meta name="robots" content="index, follow">
-
-  <link rel="canonical"
-        href="https://hamzaallen.github.io/ml-engineering-research-portfolio/">
-
+  <link rel="canonical" href="https://hamzaallen.github.io/ml-engineering-research-portfolio/">
   <meta property="og:type" content="website">
-  <meta property="og:title"
-        content="Hamza El Byad | Machine Learning Engineer & AI Researcher">
-  <meta property="og:description"
-        content="Explore Hamza El Byad's professional portfolio in Machine Learning, Applied AI, MLOps, and scientific research.">
-  <meta property="og:url"
-        content="https://hamzaallen.github.io/ml-engineering-research-portfolio/">
-
+  <meta property="og:title" content="Hamza El Byad | Research & Machine Learning">
+  <meta property="og:description" content="Statistical inference, astrophysical research, scientific software and applied machine learning engineering.">
+  <meta property="og:url" content="https://hamzaallen.github.io/ml-engineering-research-portfolio/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script defer src="assets/main.js"></script>
-<style>
-/* Profile image: integrates into the existing homepage hero without altering the site grid. */
-.hero-identity { display:flex; align-items:center; gap:1.2rem; margin-bottom:1.8rem; }
-.profile-photo { position:relative; width:112px; height:112px; flex:0 0 112px;
-  overflow:hidden; border-radius:50%; border:3px solid #dceae6;
-  background:#e8f2ef; box-shadow:0 10px 30px rgba(23,51,54,.10); }
-.profile-photo-fallback { position:absolute; inset:0; display:grid; place-items:center;
-  font-size:2rem; font-weight:700; letter-spacing:.04em; color:#2b6862; }
-.profile-photo img { position:relative; z-index:1; width:100%; height:100%; display:block;
-  object-fit:cover; object-position:center 28%; }
-.hero-identity-name { margin:0; font-size:1.18rem; font-weight:750; line-height:1.4; }
-.hero-identity-role { margin:.2rem 0 0; font-size:.9rem; opacity:.8; line-height:1.5; }
-@media (max-width:640px) {
-  .hero-identity { gap:.85rem; margin-bottom:1.4rem; }
-  .profile-photo { width:84px; height:84px; flex-basis:84px; }
-  .profile-photo-fallback { font-size:1.5rem; }
-  .hero-identity-name { font-size:1.04rem; }
-  .hero-identity-role { font-size:.82rem; }
-}
-
-.hero .hero-tagline {
-  font-size: clamp(1.45rem, 2.55vw, 2.15rem);
-  font-weight: 690;
-  line-height: 1.3;
-  letter-spacing: -.035em;
-  margin: 0 0 1.35rem;
-  color: #304a56;
-}
-.hero .hero-tagline span { color: var(--teal); }
-
-</style>
+  <link rel="stylesheet" href="assets/homepage.css">
 </head>
-<body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="shell nav-wrap">
-<a aria-label="Hamza El Byad — homepage" class="logo" href="index.html"><span class="monogram">HE</span><span class="logo-text">Hamza El Byad<small>Machine Learning Engineer</small></span></a>
-<button aria-controls="main-nav" aria-expanded="false" class="menu-toggle" data-menu="" type="button">Menu <span aria-hidden="true">☰</span></button>
-<nav aria-label="Main navigation" class="nav" data-nav="" id="main-nav">
-<a href="index.html#work">Projects</a><a href="index.html#experience">Experience</a><a href="research.html">Research</a><a href="index.html#skills">Skills</a><a class="nav-contact" href="mailto:elbyadhamza@gmail.com">Get in touch ↗</a><a href="cv.html">CVs ↓</a>
-</nav></div></header><main id="main">
-<section class="hero"><div class="shell hero-grid"><div>
-<div class="hero-identity">
-  <div class="profile-photo" aria-label="Profile photo of Hamza El Byad">
-    <span class="profile-photo-fallback" aria-hidden="true">HE</span>
-    <img src="assets/images/hamza-el-byad-profile.jpeg"
-         alt="Hamza El Byad, Machine Learning Engineer and AI Researcher"
-         width="112" height="112"
-         onerror="this.style.display='none'">
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Hamza El Byad — homepage">HEB<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="research.html">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Background</a>
+      <a href="cv.html">CVs</a>
+      <a href="mailto:elbyadhamza@gmail.com">Contact ↗</a>
+    </nav>
+    <details class="mobile-menu">
+      <summary>Menu <span aria-hidden="true">☰</span></summary>
+      <nav aria-label="Mobile navigation">
+        <a href="research.html">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Background</a>
+        <a href="cv.html">CVs</a>
+        <a href="mailto:elbyadhamza@gmail.com">Contact ↗</a>
+      </nav>
+    </details>
   </div>
-  <div class="hero-identity-text">
-    <p class="hero-identity-name">Hamza El Byad</p>
-    <p class="hero-identity-role">Machine Learning Engineer &amp; AI Researcher</p>
-  </div>
-</div>
-<span class="eyebrow">MACHINE LEARNING ENGINEER  /  APPLIED AI  /  SCIENTIFIC ML</span>
-<h1>Hamza El Byad</h1>
-<h2 class="hero-tagline">I build machine learning systems that <span>work beyond the notebook.</span></h2>
-<p class="hero-lead">Machine Learning Engineer with a PhD in Mathematics &amp; Computer Science, working across RAG applications, industrial predictive modeling, and scientific data analysis.</p>
-<p class="hero-detail">I combine research methods with practical software engineering: from data preparation and model evaluation to tested applications and versioned releases.</p>
-<div class="actions"><a class="btn primary" href="#work">View projects →</a><a class="btn secondary" href="cv.html">Choose CV →</a></div>
-<div class="hero-links"><a href="https://github.com/hamzaallen" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="research.html">Publications ↗</a><a href="mailto:elbyadhamza@gmail.com">Email ↗</a><a href="assets/Hamza_El_Byad_Portfolio.pdf">Portfolio PDF ↓</a></div>
-</div><aside class="intro-card"><span class="eyebrow">EXPERIENCE SNAPSHOT</span><h2>Research depth. Engineering delivery.</h2><div class="intro-row"><span class="intro-icon">01</span><div><strong>Industry engineering</strong><p>Machine Learning Engineer · Rombo AI · 2025–2026</p></div></div><div class="intro-row"><span class="intro-icon">02</span><div><strong>Scientific research</strong><p>PhD · University of Cagliari · 2022–2025</p></div></div><div class="intro-row"><span class="intro-icon">03</span><div><strong>Applied research</strong><p>European Space Agency (ESAC) · 2023</p></div></div><div class="intro-footer">Interested in Applied AI, ML Engineering &amp; research roles</div></aside></div></section>
-<section class="proofbar"><div class="shell proof-grid"><div><strong>PhD</strong><span>Mathematics &amp; Computer Science</span></div><div><strong>v1.0.0</strong><span>Released AI estimation MVP</span></div><div><strong>3/3 CI</strong><span>Backend · Frontend · Secret checks</span></div><div><strong>Peer reviewed</strong><span>Astrophysics &amp; scientific computing</span></div></div></section>
-<section class="section" id="work"><div class="shell"><div class="section-heading"><div><span class="eyebrow">SELECTED PROJECTS</span><h2>Selected work</h2></div><p>Four projects showing what I built, why I built it, and how I evaluated the result.</p></div>
-<div class="projects">
-<article class="work-item work-featured"><div class="work-number">01 / APPLIED AI</div><div class="work-copy"><div class="work-top"><h3>CustomQuoteAI</h3><span class="work-state">Private source · MVP released</span></div><p class="work-statement">Made complex product catalogs searchable through a conversational interface, with traceable internal cost estimates.</p><div class="work-brief"><div><small>WHAT I DID</small><p>Built contextual catalog retrieval, stateful option selection, and a deterministic cost calculation path with strict output safeguards.</p></div><div><small>EVIDENCE / RESULT</small><p>Released a tested internal MVP (v1.0.0); three GitHub CI jobs and 13 documented browser acceptance steps passed. Post-release first-search latency requires further work.</p></div></div><div class="techline">LangGraph <span>·</span> FastAPI <span>·</span> FAISS <span>·</span> Chainlit <span>·</span> GitHub Actions</div><a class="inline-link" href="projects/customquoteai.html">Read how I built it <span>↗</span></a></div><div aria-label="Simplified process overview" class="work-art"><div class="mini-flow"><div>Describe a request</div><span>↓</span><div>Retrieve catalog evidence</div><span>↓</span><div>Validate component details</div><span>↓</span><div>Calculate internal estimate</div></div><p>Illustrative workflow · no proprietary data</p></div></article>
-<article class="work-item"><div class="work-number">02 / INDUSTRIAL ML</div><div class="work-copy"><div class="work-top"><h3>NMR Property Prediction</h3><span class="work-state">Experimental research</span></div><p class="work-statement">Developed ML methods to estimate crude-oil properties from proton NMR measurements.</p><div class="work-brief"><div><small>WHAT I DID</small><p>Developed spectral preprocessing and PLS/PCR regression with group-aware validation across repeated measurements.</p></div><div><small>EVIDENCE / RESULT</small><p>Reported experimental API-gravity result: R² 0.963, RMSE 1.312; external validation not established.</p></div></div><div class="techline">Python <span>·</span> Chemometrics <span>·</span> Spectral analysis <span>·</span> PLS</div><a class="inline-link" href="projects/nmr-modeling.html">View project case study <span>↗</span></a></div></article>
-<article class="work-item"><div class="work-number">03 / ASTROPHYSICAL RESEARCH</div><div class="work-copy"><div class="work-top"><h3>Astrophysical Time-Series Analysis</h3><span class="work-state">Peer-reviewed research</span></div><p class="work-statement">Investigated X-ray variability and quasiperiodic oscillations using statistical time-series methods.</p><div class="work-brief"><div><small>WHAT I DID</small><p>Applied Fourier-domain timing analysis, statistical inference and significance assessment to X-ray observations.</p></div><div><small>EVIDENCE / RESULT</small><p>First-author study published in The Astrophysical Journal (2025) on quasiperiodic oscillations in M82.</p></div></div><div class="techline">Time series <span>·</span> Statistical inference <span>·</span> X-ray timing</div><a class="inline-link" href="projects/scientific-computing.html">View research case study <span>↗</span></a></div></article>
-<article class="work-item"><div class="work-number">04 / SIMULATION &amp; OPTIMIZATION</div><div class="work-copy"><div class="work-top"><h3>Adaptive Traffic Signal Optimization</h3><span class="work-state">Simulation-based prototype</span></div><p class="work-statement">Developed a framework to explore how adaptive controllers respond to changing traffic conditions in simulation.</p><div class="work-brief"><div><small>WHAT I DEVELOPED</small><p>SUMO/TraCI simulation workflow, comparative evaluation of fixed-time, Max Pressure and reinforcement-learning strategies, and an interactive visualization dashboard.</p></div><div><small>EVIDENCE / SCOPE</small><p>Simulation-based controller comparison; no unverified performance or real-world deployment claims.</p></div></div><div class="techline">Python <span>·</span> SUMO <span>·</span> TraCI <span>·</span> Reinforcement Learning <span>·</span> Optimization</div><a class="inline-link" href="projects/traffic-optimization.html">Explore traffic optimization case study <span>↗</span></a></div></article>
-</div></div></section>
-<section class="section section-muted" id="experience"><div class="shell"><div class="section-heading"><div><span class="eyebrow">EXPERIENCE</span><h2>Experience at a glance</h2></div><p>Industry work, doctoral research, and applied ML internships.</p></div><div class="timeline">
-<div class="timeline-row"><div class="when">2025 – 2026</div><div><strong>Machine Learning Engineer</strong><span>Rombo AI · Cagliari, Italy</span><p>Industrial ML for NMR and process analytics; contributed to a conversational catalog-estimation assistant.</p></div></div>
-<div class="timeline-row"><div class="when">2022 – 2025</div><div><strong>Doctoral Researcher</strong><span>University of Cagliari · Italy</span><p>Statistical analysis and scientific computing for high-energy astrophysics and machine-learning research.</p></div></div>
-<div class="timeline-row"><div class="when">2023</div><div><strong>Data Science Research Internship</strong><span>European Space Agency (ESAC) · Madrid, Spain</span><p>Deep-learning methods for compact-source detection in Planck sky maps.</p></div></div>
-<div class="timeline-row"><div class="when">2020 – 2021</div><div><strong>Research Internship</strong><span>INAF — Astronomical Observatory of Cagliari · Italy</span><p>Python tooling and statistical analysis of X-ray timing observations.</p></div></div>
-</div></div></section>
-<section class="section" id="skills"><div class="shell"><div class="section-heading"><div><span class="eyebrow">TECHNICAL FOCUS</span><h2>Technical strengths</h2></div><p>Tools and methods used in the projects above.</p></div><div class="skill-grid"><article class="skill-card"><span class="skill-number">01</span><h3>Machine Learning</h3><p>Python, PyTorch, scikit-learn, PLS/PCR, time-series analysis, signal processing, grouped validation.</p></article><article class="skill-card"><span class="skill-number">02</span><h3>Applied AI &amp; RAG</h3><p>LangGraph, FAISS, retrieval evaluation, exact-code search, FastAPI, Chainlit, stateful workflows.</p></article><article class="skill-card"><span class="skill-number">03</span><h3>Engineering &amp; Delivery</h3><p>GitFlow, GitHub Actions, pytest, Docker, TypeScript, CI/CD, versioned releases and security checks.</p></article></div></div></section>
-<section class="section section-muted" id="research-preview"><div class="shell"><div class="section-heading"><div><span class="eyebrow">SELECTED RESEARCH</span><h2>Published scientific work.</h2></div><p>Peer-reviewed contributions spanning X-ray timing and scientific computing.</p></div><div class="pub-list"><a href="https://doi.org/10.3847/1538-4357/aded8a" rel="noopener noreferrer" target="_blank"><span>2025 · First author</span><strong>A NuSTAR Study of Quasiperiodic Oscillations from the Ultraluminous X-Ray Sources in M82</strong><small>The Astrophysical Journal ↗</small></a><a href="https://doi.org/10.1016/j.ascom.2026.101096" rel="noopener noreferrer" target="_blank"><span>2026 · Co-author</span><strong>High performance Stingray</strong><small>Astronomy and Computing ↗</small></a></div><a class="inline-link" href="research.html">All selected publications <span>↗</span></a></div></section>
-<!-- DUAL_CV_SECTION_START -->
-<section class="section cv-preview-section" id="cv"><div class="shell">
-  <div class="section-heading"><div><span class="eyebrow">CURRICULUM VITAE</span><h2>Choose a CV for your role</h2></div><p>Two focused versions of my experience, research and selected work.</p></div>
-  <div class="cv-preview-grid">
-    <article class="cv-preview-item">
-      <h3>Research CV</h3>
-      <p>Statistical time-series analysis, high-energy astrophysics, doctoral research and peer-reviewed publications.</p>
-      <div class="cv-preview-actions"><a href="assets/Hamza_El_Byad_Research_CV.pdf" download="Hamza_El_Byad_Research_CV.pdf">Download Research CV ↓</a><a href="cv.html">Compare both CVs ↗</a></div>
-    </article>
-    <article class="cv-preview-item">
-      <h3>ML Engineering CV</h3>
-      <p>Industrial ML, RAG-assisted systems, NMR spectroscopy and simulation-based optimization.</p>
-      <div class="cv-preview-actions"><a href="assets/Hamza_El_Byad_ML_Engineering_CV.pdf" download="Hamza_El_Byad_ML_Engineering_CV.pdf">Download ML CV ↓</a><a href="cv.html">Compare both CVs ↗</a></div>
-    </article>
-  </div>
-</div></section>
-<!-- DUAL_CV_SECTION_END -->
+</header>
+<main id="main">
+  <section class="hero wrap" id="about" aria-labelledby="profile-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Researcher <span aria-hidden="true">/</span> Machine Learning Engineer</p>
+      <h1 id="profile-title">Hamza El Byad<span class="period">.</span></h1>
+      <p class="hero-statement">Statistical research and machine learning, from astrophysical time series to applied AI systems.</p>
+      <p class="intro">I hold a PhD in Mathematics and Computer Science from the University of Cagliari. I develop statistical analyses and practical software for scientific and industrial data, with particular interests in robust evaluation and reproducible computation.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="research.html">Explore research <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="#projects">Selected projects <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="quicklinks" aria-label="Professional links">
+        <a href="assets/Hamza_El_Byad_Research_CV.pdf">Research CV <span aria-hidden="true">↗</span></a>
+        <a href="assets/Hamza_El_Byad_ML_Engineering_CV.pdf">ML Engineering CV <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/hamzaallen" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="assets/images/hamza-el-byad-profile.jpeg" alt="Portrait of Hamza El Byad" width="400" height="400" decoding="async" fetchpriority="high">
+    </figure>
+  </section>
 
-<section class="contact-section" id="contact"><div class="shell contact-grid"><div><span class="eyebrow">GET IN TOUCH</span><h2>Interested in working together?</h2><p>I'd be glad to discuss Machine Learning Engineering, Applied AI and scientific software roles.</p></div><div class="contact-buttons"><a class="btn on-dark" href="cv.html">Choose CV →</a><a class="btn on-dark" href="mailto:elbyadhamza@gmail.com">Email me ↗</a><a class="text-on-dark" href="https://github.com/hamzaallen" rel="noopener noreferrer" target="_blank">View GitHub profile ↗</a></div></div></section>
-</main><footer class="footer"><div class="shell footer-layout"><div><strong>Hamza El Byad</strong><p>Machine Learning Engineer · Applied AI · Scientific Computing</p></div><div class="footer-links"><a href="index.html#work">Work</a><a href="research.html">Publications</a><a href="https://github.com/hamzaallen" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="mailto:elbyadhamza@gmail.com">Email ↗</a></div></div><div class="shell footer-bottom"><span>© 2026 Hamza El Byad</span><span>Selected work · Public case studies use generalized information.</span></div></footer></body></html>
+  <section class="section section-border" id="focus">
+    <div class="wrap">
+      <div class="section-heading compact">
+        <p class="eyebrow">Areas of work</p>
+        <h2>Research interests</h2>
+      </div>
+      <div class="focus-grid">
+        <article>
+          <span class="item-index">01</span>
+          <h3>Astrophysical time series</h3>
+          <p>X-ray timing, periodic and aperiodic variability, Fourier-domain statistics and uncertainty-aware inference.</p>
+        </article>
+        <article>
+          <span class="item-index">02</span>
+          <h3>Scientific machine learning</h3>
+          <p>Signal processing, statistical modeling, evaluation design and reproducible scientific software.</p>
+        </article>
+        <article>
+          <span class="item-index">03</span>
+          <h3>Applied AI engineering</h3>
+          <p>Retrieval-augmented workflows, structured validation, deterministic safeguards and tested ML applications.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="publications">
+    <div class="wrap publications-layout">
+      <div class="section-heading">
+        <p class="eyebrow">Peer-reviewed research</p>
+        <h2>Selected publications</h2>
+        <p>High-energy astrophysics, time-series methods and scientific computing.</p>
+        <a class="text-link" href="research.html">Publications, presentations &amp; doctoral training ↗</a>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <p class="paper-meta">2025 <span aria-hidden="true">·</span> First author <span aria-hidden="true">·</span> The Astrophysical Journal</p>
+          <h3>A NuSTAR Study of Quasiperiodic Oscillations from the Ultraluminous X-Ray Sources in M82</h3>
+          <a href="https://doi.org/10.3847/1538-4357/aded8a" target="_blank" rel="noopener noreferrer">DOI / paper ↗</a>
+        </article>
+        <article class="publication">
+          <p class="paper-meta">2026 <span aria-hidden="true">·</span> Co-author <span aria-hidden="true">·</span> Astronomy &amp; Computing</p>
+          <h3>High performance Stingray</h3>
+          <a href="https://doi.org/10.1016/j.ascom.2026.101096" target="_blank" rel="noopener noreferrer">DOI / paper ↗</a>
+        </article>
+        <article class="publication">
+          <p class="paper-meta">2023 <span aria-hidden="true">·</span> Co-author <span aria-hidden="true">·</span> Frontiers</p>
+          <h3>The High Energy X-ray Probe (HEX-P): studying extreme accretion with ultraluminous X-ray sources</h3>
+          <a href="https://doi.org/10.3389/fspas.2023.1289432" target="_blank" rel="noopener noreferrer">DOI / paper ↗</a>
+        </article>
+        <div class="conference-link">
+          <strong>Scientific presentations</strong>
+          <p>Poster contributions at FERO-10 (2022) and the XMM-Newton Science Workshop (2024).</p>
+          <a class="text-link" href="research.html#presentations">View conference record ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">Applied research &amp; software</p><h2>Selected projects</h2></div>
+        <p>Representative projects with stated evidence, scope and limitations.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <p class="project-type">01 <span aria-hidden="true">/</span> Applied AI</p>
+          <h3>CustomQuoteAI</h3>
+          <p>Developed a retrieval-based assistant for complex product catalogs and traceable internal cost estimates.</p>
+          <p class="project-evidence"><strong>Evidence:</strong> internal v1.0.0 MVP; 3 CI jobs and 13 recorded acceptance steps passed.</p>
+          <div class="project-bottom"><span>LangGraph · FastAPI · FAISS</span><a href="projects/customquoteai.html">Case study ↗</a></div>
+        </article>
+        <article class="project">
+          <p class="project-type">02 <span aria-hidden="true">/</span> Industrial ML</p>
+          <h3>NMR Property Prediction</h3>
+          <p>Predicted crude-oil properties from NMR measurements using spectral preprocessing and PLS/PCR regression.</p>
+          <p class="project-evidence"><strong>Evidence:</strong> reported API-gravity R² = 0.963; external validation remains unestablished.</p>
+          <div class="project-bottom"><span>Spectroscopy · Chemometrics</span><a href="projects/nmr-modeling.html">Case study ↗</a></div>
+        </article>
+        <article class="project">
+          <p class="project-type">03 <span aria-hidden="true">/</span> Astrophysics</p>
+          <h3>Statistical X-ray Timing</h3>
+          <p>Investigated quasiperiodic oscillations and aperiodic X-ray variability through statistical time-series analysis.</p>
+          <p class="project-evidence"><strong>Evidence:</strong> first-author study in The Astrophysical Journal (2025).</p>
+          <div class="project-bottom"><span>Fourier analysis · Statistics</span><a href="projects/scientific-computing.html">Case study ↗</a></div>
+        </article>
+        <article class="project">
+          <p class="project-type">04 <span aria-hidden="true">/</span> Simulation &amp; optimization</p>
+          <h3>Adaptive Traffic Signals</h3>
+          <p>Built a simulation-based framework for comparing fixed-time, max-pressure and reinforcement-learning strategies.</p>
+          <p class="project-evidence"><strong>Scope:</strong> simulation study; no real-world deployment or performance claim.</p>
+          <div class="project-bottom"><span>Python · SUMO · TraCI</span><a href="projects/traffic-optimization.html">Case study ↗</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="experience">
+    <div class="wrap">
+      <div class="section-heading compact"><p class="eyebrow">Professional background</p><h2>Research &amp; engineering experience</h2></div>
+      <div class="timeline">
+        <div class="timeline-entry"><time datetime="2025">2025–2026</time><div><h3>Machine Learning Engineer</h3><p class="affiliation">Rombo AI · Cagliari, Italy</p><p>Industrial ML, NMR analytics and retrieval-based internal tools.</p></div></div>
+        <div class="timeline-entry"><time datetime="2022">2022–2025</time><div><h3>Doctoral Researcher · PhD in Mathematics &amp; Computer Science</h3><p class="affiliation">University of Cagliari · Italy</p><p>High-energy astrophysics, statistical inference and scientific software.</p></div></div>
+        <div class="timeline-entry"><time datetime="2023">2023</time><div><h3>Data Science Research Intern</h3><p class="affiliation">European Space Agency (ESAC) · Madrid, Spain</p><p>Deep learning for compact-source detection in Planck sky maps.</p></div></div>
+        <div class="timeline-entry"><time datetime="2020">2020–2021</time><div><h3>Research Intern</h3><p class="affiliation">INAF, Astronomical Observatory of Cagliari</p><p>Statistical analysis and computational methods for X-ray timing.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cv-section" id="cv">
+    <div class="wrap cv-layout">
+      <div class="section-heading"><p class="eyebrow">Curriculum vitae</p><h2>Research or engineering?</h2><p>Two tailored versions of the same professional record.</p></div>
+      <div class="cv-links">
+        <a href="assets/Hamza_El_Byad_Research_CV.pdf" download="Hamza_El_Byad_Research_CV.pdf"><span>Research / academia</span><strong>Download research CV</strong><span aria-hidden="true" class="download-icon">↓</span></a>
+        <a href="assets/Hamza_El_Byad_ML_Engineering_CV.pdf" download="Hamza_El_Byad_ML_Engineering_CV.pdf"><span>Industry / ML engineering</span><strong>Download engineering CV</strong><span aria-hidden="true" class="download-icon">↓</span></a>
+        <a class="text-link" href="cv.html">Compare CV versions ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© 2026 · Research, machine learning &amp; scientific software</p>
+    <nav aria-label="Footer navigation"><a href="mailto:elbyadhamza@gmail.com">Email ↗</a><a href="https://github.com/hamzaallen" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="research.html">Research ↗</a><a href="cv.html">CVs ↗</a></nav>
+  </div>
+</footer>
+<script>
+  // Close the native mobile menu after selecting a destination.
+  document.querySelectorAll(".mobile-menu nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      const menu = link.closest("details");
+      if (menu) menu.open = false;
+    });
+  });
+</script>
+</body>
+</html>
