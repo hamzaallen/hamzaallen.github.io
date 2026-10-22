@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f9fafb">
+<title>Adaptive Traffic Signal Optimization | Hamza El Byad</title>
+<meta name="description" content="Simulation-based traffic signal optimization developed by Hamza El Byad using SUMO, TraCI, fixed-time, Max Pressure and reinforcement-learning control strategies.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/traffic-optimization.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Adaptive Traffic Signal Optimization | Hamza El Byad">
+<meta property="og:description" content="A simulation-based Machine Learning engineering case study comparing fixed-time, Max Pressure and reinforcement-learning traffic control.">
+<meta property="og:url" content="https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/traffic-optimization.html">
+<meta property="og:image" content="https://hamzaallen.github.io/ml-engineering-research-portfolio/assets/images/traffic-optimization-linkedin.png">
+<meta name="twitter:card" content="summary_large_image">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<link href="../assets/styles.css" rel="stylesheet">
+<script defer src="../assets/main.js"></script>
+<style>
+.traffic-visual {margin:32px 0 22px;}
+.traffic-visual img {display:block;width:100%;height:auto;border-radius:18px;border:1px solid #d8e6e4;}
+.traffic-visual figcaption{font-size:.83rem;color:#587078;line-height:1.6;margin-top:10px;}
+.traffic-controller{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0;}
+.traffic-controller>div{background:#f4f8f7;border:1px solid #dde9e6;border-radius:14px;padding:18px;}
+.traffic-controller strong{display:block;color:#143943;margin-bottom:8px;}
+.traffic-controller p{margin:0;color:#455e65;font-size:.92rem;line-height:1.65;}
+.traffic-notes{border-left:3px solid #36897e;padding:16px 18px;background:#f0f8f6;margin:18px 0;border-radius:0 10px 10px 0;}
+@media(max-width:700px){.traffic-controller{grid-template-columns:1fr}.traffic-visual{margin:22px 0}}
+</style>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="shell nav-wrap">
+<a aria-label="Hamza El Byad — homepage" class="logo" href="../index.html"><span class="monogram">HE</span><span class="logo-text">Hamza El Byad<small>Machine Learning Engineer</small></span></a>
+<button aria-controls="main-nav" aria-expanded="false" class="menu-toggle" data-menu="" type="button">Menu <span aria-hidden="true">☰</span></button>
+<nav aria-label="Main navigation" class="nav" data-nav="" id="main-nav">
+<a href="../index.html#work">Projects</a><a href="../index.html#experience">Experience</a><a href="../research.html">Research</a><a href="../index.html#skills">Skills</a><a class="nav-contact" href="mailto:elbyadhamza@gmail.com">Get in touch ↗</a>
+</nav></div></header><main id="main">
+<section class="case-intro"><div class="shell narrow">
+  <div class="breadcrumb"><a href="../index.html#work">← All projects</a><span>/</span>Simulation and control</div>
+  <span class="eyebrow">APPLIED ML · SIMULATION · OPTIMIZATION</span>
+  <h1>Adaptive Traffic Signal Optimization</h1>
+  <p class="case-lead">Developing and evaluating intelligent intersection-control strategies in a simulated traffic environment.</p>
+  <div class="skim-summary"><strong>THE PROJECT IN 20 SECONDS</strong><p>I developed a simulation-based traffic signal control framework using SUMO and TraCI, compared fixed-time, Max Pressure and reinforcement-learning approaches, and built an interactive interface to examine the controllers and simulation outputs.</p></div>
+  <div class="case-facts">
+    <div><small>Project type</small><strong>Simulation-based engineering</strong></div>
+    <div><small>Primary stack</small><strong>Python · SUMO · TraCI</strong></div>
+    <div><small>Evaluation stage</small><strong>Simulation prototype · not field deployed</strong></div>
+  </div>
+  <div class="one-liner"><strong>In brief</strong><span>Traffic scenarios → simulated controllers → comparative analysis → dashboard.</span></div>
+  <figure class="traffic-visual"><img src="../assets/images/traffic-optimization-linkedin.png" width="1200" height="630" alt="Conceptual traffic-control intersection with the fixed-time, Max Pressure and reinforcement-learning policy comparison" loading="lazy"><figcaption>Illustrative case-study artwork. Not a screenshot of the running simulator, and not a measured comparison of controller performance.</figcaption></figure>
+</div></section>
+<div class="shell case-layout"><aside class="toc">
+<p>ON THIS PAGE</p>
+<a href="#problem">01 · Problem</a>
+<a href="#contribution">02 · My development</a>
+<a href="#controllers">03 · Controllers</a>
+<a href="#workflow">04 · Workflow</a>
+<a href="#evaluation">05 · Evaluation</a>
+<a href="#limitations">06 · Limitations</a>
+</aside>
+<article class="case-body">
+  <section class="article-section" id="problem"><span class="eyebrow">01 / CASE STUDY</span><h2>The problem</h2>
+  <p>Traffic demand varies over time. A fixed sequence of signal phases may not respond to changing queues, directional imbalance or congestion. The engineering question is how different policies can be compared under common simulated conditions before considering real-world use.</p>
+  <p>Traffic signal optimization requires more than a single score: throughput, waiting time, queue buildup and phase behavior can move in different directions across scenarios.</p>
+  </section>
+  <section class="article-section" id="contribution"><span class="eyebrow">02 / CASE STUDY</span><h2>What I developed</h2>
+  <div class="bullet-panels"><div><h3>Traffic simulation</h3><p>Developed a simulation workflow using SUMO and the TraCI interface to inspect evolving vehicle and intersection states.</p></div>
+  <div><h3>Controller comparison</h3><p>Compared fixed-time traffic signals with Max Pressure and reinforcement-learning approaches using simulated scenarios.</p></div>
+  <div><h3>Performance analysis</h3><p>Examined controller behavior through traffic-related indicators such as delay, queues and throughput where collected.</p></div>
+  <div><h3>Interactive visualization</h3><p>Developed dashboard functionality for exploring simulation behavior and comparing control strategies.</p></div></div>
+  </section>
+  <section class="article-section" id="controllers"><span class="eyebrow">03 / CASE STUDY</span><h2>Three approaches to signal control</h2>
+  <div class="traffic-controller"><div><strong>Fixed-time</strong><p>A transparent reference policy following a preset schedule. Useful as a baseline for comparison.</p></div><div><strong>Max Pressure</strong><p>A feedback-oriented method that prioritizes phases using congestion or queue imbalance.</p></div><div><strong>Reinforcement Learning</strong><p>A learning-based control approach assessed against non-learning policies in simulation.</p></div></div>
+  <p>The purpose of the comparison is to explore control-policy behavior and tradeoffs, not to presume that any approach is universally superior.</p>
+  </section>
+  <section class="article-section" id="workflow"><span class="eyebrow">04 / CASE STUDY</span><h2>Technical workflow</h2>
+  <div class="flowline"><div><span>01</span><strong>Scenario setup</strong><small>Demand and network</small></div><i>→</i><div><span>02</span><strong>SUMO / TraCI</strong><small>Vehicle simulation</small></div><i>→</i><div><span>03</span><strong>Control policies</strong><small>Phase decisions</small></div><i>→</i><div><span>04</span><strong>Analysis</strong><small>Metrics &amp; dashboard</small></div></div>
+  <p>Simulation provides a controlled way to compare policies, inspect temporal decision-making and test how a controller responds to changing traffic conditions.</p>
+  </section>
+  <section class="article-section" id="evaluation"><span class="eyebrow">05 / CASE STUDY</span><h2>Evaluation focus</h2>
+  <p>The comparative approach considers waiting time, queue behavior, network throughput and signal phase dynamics. Interpretation depends on scenario design, random seeds and comparable evaluation conditions.</p>
+  <div class="traffic-notes"><strong>Evidence boundary</strong><p>This public case study does not present numerical improvements or claim a proven best controller; reproducible experiment outputs and independent benchmarking would be required to support quantitative claims.</p></div>
+  </section>
+  <section class="article-section" id="limitations"><span class="eyebrow">06 / CASE STUDY</span><h2>Limitations and next steps</h2>
+  <p>Simulation results depend on traffic demand assumptions and network configuration. A stronger engineering validation would document held-out scenarios, repeated runs, controller training and evaluation separation, runtime constraints and safety rules for phase changes.</p>
+  <p>The framework has not been presented here as a production-controlled physical intersection or a real-world traffic deployment.</p>
+  <div class="lesson"><strong>Engineering lesson</strong><p>Adaptive decision-making should be tested against simple, credible baselines under matched conditions. Reliable comparisons matter more than optimistic benchmark claims.</p></div>
+  </section>
+</article></div>
+<section class="next-case"><div class="shell"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Related project</h2></div><a href="nmr-modeling.html">Industrial NMR Predictive Modeling <span aria-hidden="true">↗</span></a></div></section>
+</main><footer class="footer"><div class="shell footer-layout"><div><strong>Hamza El Byad</strong><p>Machine Learning Engineer · Applied AI · Scientific Computing</p></div><div class="footer-links"><a href="../index.html#work">Work</a><a href="../research.html">Publications</a><a href="https://github.com/hamzaallen" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="mailto:elbyadhamza@gmail.com">Email ↗</a></div></div><div class="shell footer-bottom"><span>© 2026 Hamza El Byad</span><span>Generalized case study · Confidential project materials not reproduced.</span></div></footer></body></html>
