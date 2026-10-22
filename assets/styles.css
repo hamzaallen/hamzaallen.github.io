@@ -46,3 +46,34 @@ body{font-size:17px;line-height:1.7}
 .case-body .article-section p{color:#3c5660;font-size:1.02rem}
 @media(max-width:800px){.hero-grid{gap:30px}.hero{padding:48px 0}.intro-card{padding:23px}.section{padding:60px 0}}
 @media(max-width:600px){body{font-size:16.5px}.hero h1{font-size:clamp(2.45rem,9.5vw,3.15rem)}.hero-lead{font-size:1.08rem}.hero-detail{font-size:.98rem}.proof-grid span{font-size:.83rem!important}.work-item{padding:24px 20px}.case-intro h1{font-size:2.45rem}.contact-buttons .btn{min-height:48px}}
+
+/* DUAL_CV_STYLES_START */
+/* Extends the existing design system without affecting project layouts. */
+.cv-landing-hero {padding:84px 0 58px;background:linear-gradient(120deg,#fbfcfd 45%,#eef7f5 105%);border-bottom:1px solid var(--border);}
+.cv-landing-hero h1 {font-size:clamp(2.65rem,5vw,4rem);max-width:830px;line-height:1.12;margin:0 0 20px;}
+.cv-landing-hero p {max-width:780px;color:var(--muted);font-size:1.12rem;line-height:1.75;}
+.cv-landing-section {padding-top:65px;}
+.cv-choice-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+.cv-choice-card {display:flex;flex-direction:column;gap:0;padding:32px;border:1px solid var(--border);background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);}
+.cv-choice-card.cv-featured {border-color:#a8d2c8;background:linear-gradient(160deg,#f7fcfa 0%,#fff 82%);}
+.cv-choice-card .eyebrow {margin-bottom:11px;}
+.cv-choice-card h2 {font-size:clamp(1.7rem,2.6vw,2.25rem);margin-bottom:12px;}
+.cv-choice-card p {color:#49626a;font-size:.96rem;line-height:1.65;}
+.cv-choice-card .cv-lead {font-weight:690;color:var(--teal-dark);margin-bottom:16px;}
+.cv-metadata {display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;font-weight:650;margin-top:auto;padding:20px 0 0;}
+.cv-metadata span {border:1px solid var(--border);border-radius:99px;padding:3px 11px;}
+.cv-actions {display:flex;align-items:stretch;flex-wrap:wrap;gap:10px;margin-top:21px;}
+.cv-actions .btn {flex:1 1 auto;min-width:130px;font-size:.85rem;}
+.cv-note {font-size:.91rem;color:var(--muted);margin-top:24px;max-width:800px;}
+.cv-note a {color:var(--teal);text-decoration:underline;text-underline-offset:2px;}
+.cv-preview-section {padding-top:75px;}
+.cv-preview-section .section-heading {margin-bottom:25px;}
+.cv-preview-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.cv-preview-item {border:1px solid var(--border);border-radius:var(--radius);padding:25px;background:#fff;}
+.cv-preview-item h3 {font-size:1.43rem;margin:0 0 9px;}
+.cv-preview-item p {color:var(--muted);font-size:.91rem;line-height:1.65;margin-bottom:17px;}
+.cv-preview-item .cv-preview-actions {display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.cv-preview-item .cv-preview-actions a {color:var(--teal-dark);font-weight:680;font-size:.86rem;text-decoration:underline;text-underline-offset:2px;}
+@media(max-width:790px) {.cv-choice-grid,.cv-preview-grid {grid-template-columns:1fr;}.cv-landing-hero {padding:56px 0 42px;}.cv-landing-section {padding-top:43px;}}
+@media(max-width:540px) {.cv-choice-card {padding:23px;}.cv-preview-item {padding:22px;}.cv-actions .btn {flex:1 1 100%;}}
+/* DUAL_CV_STYLES_END */
