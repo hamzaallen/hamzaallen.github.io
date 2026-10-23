@@ -1,0 +1,38 @@
+/* Harmonize CV, research and case-study pages with the redesigned homepage.
+   The detailed content and original layout rules in styles.css are preserved. */
+:root {
+  --ink:#18343b;
+  --headline:#142d34;
+  --muted:#4e646b;
+  --teal:#006e66;
+  --teal-dark:#07594f;
+  --pale:#eaf4ee;
+  --canvas:#faf9f6;
+  --soft:#eff4f1;
+  --border:#d8e2dc;
+}
+body { background: var(--canvas); font-family: system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif; }
+.site-header { background: rgba(250,249,246,.97); border-bottom-color: var(--border); }
+.site-header .nav-wrap { min-height:75px; }
+.site-header .logo { letter-spacing:-.065em; }
+.site-header .monogram { display:inline-block; width:auto; height:auto; padding:0; border-radius:0; background:transparent; color:var(--ink); font-size:1.4rem; line-height:1; font-weight:780; }
+.site-header .brand-period { color:var(--teal); }
+.site-header .nav { gap:clamp(14px,2.7vw,30px); }
+.site-header .nav a { color:var(--ink); font-size:.87rem; font-weight:650; }
+.site-header .nav a:hover { color:var(--teal); }
+.site-header .nav .nav-contact { background:transparent; color:var(--ink); padding:0; border-radius:0; margin:0; }
+.site-header .nav .nav-contact:hover { background:transparent; color:var(--teal); }
+.site-header .menu-toggle { border-color:var(--border); border-radius:5px; }
+.page-hero, .cv-landing-hero, .case-intro { background:var(--soft); border-color:var(--border); }
+.cv-choice-card, .academic-item, .publication-cards a { background:#fff; border-color:var(--border); }
+.footer { background:#173640; color:#eef6f2; }
+.footer .footer-layout strong { color:#fff; }
+.footer .footer-layout p, .footer .footer-links a, .footer .footer-bottom { color:#d0e0de; }
+.footer .footer-bottom { border-top-color:#3d5960; }
+.footer .footer-links a:hover { color:#fff; }
+@media(max-width:800px) {
+  .site-header .nav-wrap { min-height:65px; }
+  .site-header .nav { gap:0; background:#fff; }
+  .site-header .nav a { padding:12px 8px; }
+  .site-header .nav .nav-contact { margin-top:0; text-align:left; padding:12px 8px; border-bottom:1px solid var(--border); }
+}
