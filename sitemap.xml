@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/research.html</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/customquoteai.html</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/nmr-modeling.html</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/scientific-computing.html</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/projects/traffic-optimization.html</loc>
-  </url>
-  <url>
-    <loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/cv.html</loc>
-  </url>
+  <url><loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/</loc></url>
+  <url><loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/research.html</loc></url>
+  <url><loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/projects.html</loc></url>
+  <url><loc>https://hamzaallen.github.io/ml-engineering-research-portfolio/cv.html</loc></url>
 </urlset>
