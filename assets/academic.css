@@ -73,7 +73,7 @@ a:focus-visible {
 }
 
 .container {
-  width: min(1560px, calc(100% - 112px));
+  width: min(1480px, calc(100% - 144px));
   margin-inline: auto;
 }
 
