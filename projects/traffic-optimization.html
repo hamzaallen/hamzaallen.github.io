@@ -46,14 +46,14 @@
   <div class="breadcrumb"><a href="../index.html#work">← All projects</a><span>/</span>Simulation and control</div>
   <span class="eyebrow">APPLIED ML · SIMULATION · OPTIMIZATION</span>
   <h1>Adaptive Traffic Signal Optimization</h1>
-  <p class="case-lead">A reproducible SUMO/TraCI traffic-control case study: controller comparison, safety-aware signal transitions, experiment evidence and an interactive public replay.</p>
-  <div class="skim-summary"><strong>THE PROJECT IN 20 SECONDS</strong><p>I developed a simulation-based traffic-signal control framework using SUMO and TraCI, compared fixed-time, Max Pressure and reinforcement-learning approaches, and built an interactive public demo to examine controller decisions and recorded simulation outputs.</p><p class="case-actions"><a href="https://hamzaallen.github.io/cagliari-traffic-lab/" target="_blank" rel="noopener noreferrer">Open the interactive simulation demo ↗</a></p></div>
+  <p class="case-lead">A reproducible SUMO/TraCI traffic-control case study, from network and demand construction to safety-aware signal control, experiment evidence and an interactive public replay.</p>
+  <div class="skim-summary"><strong>THE PROJECT IN 20 SECONDS</strong><p>I built a simulation-based traffic-signal control workflow in Python with SUMO and TraCI, compared fixed-time, Max Pressure and reinforcement-learning approaches, and packaged the work as an interactive public demo with documented evidence.</p><p class="case-actions"><a href="https://hamzaallen.github.io/cagliari-traffic-lab/" target="_blank" rel="noopener noreferrer">Explore the interactive simulation demo ↗</a></p></div>
   <div class="case-facts">
     <div><small>Project type</small><strong>Simulation-based engineering</strong></div>
     <div><small>Primary stack</small><strong>Python · SUMO · TraCI</strong></div>
-    <div><small>Evaluation stage</small><strong>Validated simulation demo · not field deployed</strong></div>
+    <div><small>Evaluation stage</small><strong>Safety-checked simulation demo · not field deployed</strong></div>
   </div>
-  <div class="one-liner"><strong>In brief</strong><span>Traffic scenarios → simulated controllers → comparative analysis → dashboard.</span></div>
+  <div class="one-liner"><strong>In brief</strong><span>Traffic scenarios → controllers → safety gates → comparative analysis → interactive replay.</span></div>
   <figure class="traffic-visual"><img src="../assets/images/traffic-optimization-linkedin.png" width="1200" height="630" alt="Conceptual traffic-control intersection with the fixed-time, Max Pressure and reinforcement-learning policy comparison" loading="lazy"><figcaption>Illustrative case-study artwork. Not a screenshot of the running simulator, and not a measured comparison of controller performance.</figcaption></figure>
 </div></section>
 <div class="shell case-layout"><aside class="toc">
@@ -71,10 +71,10 @@
   <p>Traffic signal optimization requires more than a single score: throughput, waiting time, queue buildup and phase behavior can move in different directions across scenarios.</p>
   </section>
   <section class="article-section" id="contribution"><span class="eyebrow">02 / CASE STUDY</span><h2>What I developed</h2>
-  <div class="bullet-panels"><div><h3>Traffic simulation</h3><p>Developed a simulation workflow using SUMO and the TraCI interface to inspect evolving vehicle and intersection states.</p></div>
-  <div><h3>Controller comparison</h3><p>Compared fixed-time traffic signals with Max Pressure and reinforcement-learning approaches using simulated scenarios.</p></div>
-  <div><h3>Performance analysis</h3><p>Examined controller behavior through traffic-related indicators such as delay, queues and throughput where collected.</p></div>
-  <div><h3>Interactive visualization</h3><p>Developed dashboard functionality for exploring simulation behavior and comparing control strategies.</p></div></div>
+  <div class="bullet-panels"><div><h3>Scenario engineering</h3><p>Built SUMO networks, demand and pedestrian routes, then used TraCI to observe evolving vehicle, queue and signal state.</p></div>
+  <div><h3>Controller comparison</h3><p>Evaluated fixed-time, Max Pressure and reinforcement-learning approaches under shared simulated scenarios.</p></div>
+  <div><h3>Safety-aware control</h3><p>Implemented protected signal transitions and automated checks for clearance, conflicts, collisions and pedestrian–vehicle overlap.</p></div>
+  <div><h3>Reproducible delivery</h3><p>Saved experiment outputs, documented decisions and published an interactive replay for technical and non-technical audiences.</p></div></div>
   </section>
   <section class="article-section" id="controllers"><span class="eyebrow">03 / CASE STUDY</span><h2>Three approaches to signal control</h2>
   <div class="traffic-controller"><div><strong>Fixed-time</strong><p>A transparent reference policy following a preset schedule. Useful as a baseline for comparison.</p></div><div><strong>Max Pressure</strong><p>A feedback-oriented method that prioritizes phases using congestion or queue imbalance.</p></div><div><strong>Reinforcement Learning</strong><p>A learning-based control approach assessed against non-learning policies in simulation.</p></div></div>
