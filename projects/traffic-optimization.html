@@ -46,12 +46,12 @@
   <div class="breadcrumb"><a href="../index.html#work">← All projects</a><span>/</span>Simulation and control</div>
   <span class="eyebrow">APPLIED ML · SIMULATION · OPTIMIZATION</span>
   <h1>Adaptive Traffic Signal Optimization</h1>
-  <p class="case-lead">Developing and evaluating intelligent intersection-control strategies in a simulated traffic environment.</p>
-  <div class="skim-summary"><strong>THE PROJECT IN 20 SECONDS</strong><p>I developed a simulation-based traffic signal control framework using SUMO and TraCI, compared fixed-time, Max Pressure and reinforcement-learning approaches, and built an interactive interface to examine the controllers and simulation outputs.</p></div>
+  <p class="case-lead">A reproducible SUMO/TraCI traffic-control case study: controller comparison, safety-aware signal transitions, experiment evidence and an interactive public replay.</p>
+  <div class="skim-summary"><strong>THE PROJECT IN 20 SECONDS</strong><p>I developed a simulation-based traffic-signal control framework using SUMO and TraCI, compared fixed-time, Max Pressure and reinforcement-learning approaches, and built an interactive public demo to examine controller decisions and recorded simulation outputs.</p><p class="case-actions"><a href="https://hamzaallen.github.io/cagliari-traffic-lab/" target="_blank" rel="noopener noreferrer">Open the interactive simulation demo ↗</a></p></div>
   <div class="case-facts">
     <div><small>Project type</small><strong>Simulation-based engineering</strong></div>
     <div><small>Primary stack</small><strong>Python · SUMO · TraCI</strong></div>
-    <div><small>Evaluation stage</small><strong>Simulation prototype · not field deployed</strong></div>
+    <div><small>Evaluation stage</small><strong>Validated simulation demo · not field deployed</strong></div>
   </div>
   <div class="one-liner"><strong>In brief</strong><span>Traffic scenarios → simulated controllers → comparative analysis → dashboard.</span></div>
   <figure class="traffic-visual"><img src="../assets/images/traffic-optimization-linkedin.png" width="1200" height="630" alt="Conceptual traffic-control intersection with the fixed-time, Max Pressure and reinforcement-learning policy comparison" loading="lazy"><figcaption>Illustrative case-study artwork. Not a screenshot of the running simulator, and not a measured comparison of controller performance.</figcaption></figure>
@@ -85,11 +85,11 @@
   <p>Simulation provides a controlled way to compare policies, inspect temporal decision-making and test how a controller responds to changing traffic conditions.</p>
   </section>
   <section class="article-section" id="evaluation"><span class="eyebrow">05 / CASE STUDY</span><h2>Evaluation focus</h2>
-  <p>The comparative approach considers waiting time, queue behavior, network throughput and signal phase dynamics. Interpretation depends on scenario design, random seeds and comparable evaluation conditions.</p>
-  <div class="traffic-notes"><strong>Evidence boundary</strong><p>This public case study does not present numerical improvements or claim a proven best controller; reproducible experiment outputs and independent benchmarking would be required to support quantitative claims.</p></div>
+  <p>The comparative approach considers waiting time, queue behavior, network throughput and signal phase dynamics under matched simulated conditions. The final local safety stress test completed 180 vehicles and 14 pedestrians over 2,400 seconds with zero recorded collisions, teleports, signal conflicts or pedestrian–vehicle overlaps.</p>
+  <div class="traffic-notes"><strong>What this demonstrates</strong><p>The project demonstrates end-to-end simulation engineering: scenario construction, controller implementation, automated safety gates, reproducible experiments and a deployable portfolio replay. These results apply to the documented synthetic SUMO scenarios; they are not evidence of real-road performance or a field deployment.</p></div>
   </section>
   <section class="article-section" id="limitations"><span class="eyebrow">06 / CASE STUDY</span><h2>Limitations and next steps</h2>
-  <p>Simulation results depend on traffic demand assumptions and network configuration. A stronger engineering validation would document held-out scenarios, repeated runs, controller training and evaluation separation, runtime constraints and safety rules for phase changes.</p>
+  <p>Simulation results depend on traffic-demand assumptions and network configuration. The case study includes baseline comparison, automated safety checks and documented stress evaluation; field calibration, held-out real-world traffic data and production traffic-authority approval remain outside its scope.</p>
   <p>The framework has not been presented here as a production-controlled physical intersection or a real-world traffic deployment.</p>
   <div class="lesson"><strong>Engineering lesson</strong><p>Adaptive decision-making should be tested against simple, credible baselines under matched conditions. Reliable comparisons matter more than optimistic benchmark claims.</p></div>
   </section>
